@@ -40,10 +40,50 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="AsyncDisplayKit Demo" id="iDL-Ok-lW5"/>
+                    <connections>
+                        <segue destination="Xdj-1s-Zn7" kind="show" identifier="UITableViewSegue" id="cRD-pC-woY"/>
+                        <segue destination="z8c-Kt-KFt" kind="show" identifier="ASTableViewSegue" id="p9V-gm-lMZ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WjS-xQ-D1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1452" y="567"/>
+        </scene>
+        <!--UITableView-->
+        <scene sceneID="Uw4-uY-biw">
+            <objects>
+                <viewController title="UITableView" id="Xdj-1s-Zn7" customClass="UITableViewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lzj-HC-8LZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="vMZ-OJ-UPY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3MU-pv-aEP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TtP-QY-EbE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2361" y="184"/>
+        </scene>
+        <!--ASTableView-->
+        <scene sceneID="1VQ-cD-Akr">
+            <objects>
+                <viewController title="ASTableView" id="z8c-Kt-KFt" customClass="ASTableViewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GcT-e0-kzG"/>
+                        <viewControllerLayoutGuide type="bottom" id="mDH-Ir-QzF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mdg-Jl-5z1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B8U-OU-DRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2361" y="950"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q8f-vd-gxQ">
