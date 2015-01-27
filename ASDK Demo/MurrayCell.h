@@ -11,6 +11,5 @@
 @interface MurrayCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *murrayImageView;
-@property (weak, nonatomic) IBOutlet UILabel *murrayLabel;
 
 @end

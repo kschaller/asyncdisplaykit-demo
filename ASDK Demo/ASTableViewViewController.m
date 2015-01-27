@@ -12,7 +12,7 @@
 #import "MurrayNode.h"
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
 
-static const NSInteger kNumberOfRows = 50;
+static const NSInteger kNumberOfRows = 20;
 
 @interface ASTableViewViewController () <ASTableViewDataSource, ASTableViewDelegate>
 
