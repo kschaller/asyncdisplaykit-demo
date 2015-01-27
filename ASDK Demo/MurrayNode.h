@@ -10,6 +10,8 @@
 
 @interface MurrayNode : ASCellNode
 
++ (NSArray *)placeholders;
+
 - (instancetype)initWithMurrayOfSize:(CGSize)size;
 
 @end

@@ -75,7 +75,7 @@ static const CGFloat kInnerPadding = 10;
     
     // Images courtesy of FillMurray.com, with a background color serving as a placholder.
     _imageNode = [[ASNetworkImageNode alloc] init];
-    _imageNode.backgroundColor = ASDisplayNodeDefaultPlaceholderColor();
+    _imageNode.backgroundColor = [UIColor lightGrayColor];
     _imageNode.URL = [NSURL URLWithString:[NSString stringWithFormat:@"http://www.fillmurray.com/%zd/%zd", (NSInteger)roundl(_murraySize.width), (NSInteger)roundl(_murraySize.height)]];
     [self addSubnode:_imageNode];
     

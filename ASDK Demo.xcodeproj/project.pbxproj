@@ -17,6 +17,7 @@
 		266DA0501A68DA3B00E4DD89 /* UITableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 266DA04F1A68DA3B00E4DD89 /* UITableViewViewController.m */; };
 		266DA0531A68DA4D00E4DD89 /* ASTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 266DA0521A68DA4D00E4DD89 /* ASTableViewViewController.m */; };
 		269369CC1A77E231009880A9 /* MurrayNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 269369CB1A77E231009880A9 /* MurrayNode.m */; };
+		269369CF1A7803E9009880A9 /* MurrayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 269369CE1A7803E9009880A9 /* MurrayCell.m */; };
 		E74C7ED0C0F16A32C7986209 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F858505EC67CC9C98F94A9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,8 @@
 		266DA0521A68DA4D00E4DD89 /* ASTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTableViewViewController.m; sourceTree = "<group>"; };
 		269369CA1A77E231009880A9 /* MurrayNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MurrayNode.h; sourceTree = "<group>"; };
 		269369CB1A77E231009880A9 /* MurrayNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MurrayNode.m; sourceTree = "<group>"; };
+		269369CD1A7803E9009880A9 /* MurrayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MurrayCell.h; sourceTree = "<group>"; };
+		269369CE1A7803E9009880A9 /* MurrayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MurrayCell.m; sourceTree = "<group>"; };
 		51D875BCC991143140D3214B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		79F858505EC67CC9C98F94A9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,11 +109,13 @@
 				266DA0291A68BB8F00E4DD89 /* Main.storyboard */,
 				266DA0451A68D48600E4DD89 /* MainTableViewController.h */,
 				266DA0461A68D48600E4DD89 /* MainTableViewController.m */,
+				269369CD1A7803E9009880A9 /* MurrayCell.h */,
+				269369CE1A7803E9009880A9 /* MurrayCell.m */,
+				269369CA1A77E231009880A9 /* MurrayNode.h */,
+				269369CB1A77E231009880A9 /* MurrayNode.m */,
 				266DA01F1A68BB8F00E4DD89 /* Supporting Files */,
 				266DA04E1A68DA3B00E4DD89 /* UITableViewViewController.h */,
 				266DA04F1A68DA3B00E4DD89 /* UITableViewViewController.m */,
-				269369CA1A77E231009880A9 /* MurrayNode.h */,
-				269369CB1A77E231009880A9 /* MurrayNode.m */,
 			);
 			path = "ASDK Demo";
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 				TargetAttributes = {
 					266DA01B1A68BB8E00E4DD89 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 23WT95637L;
 					};
 					266DA0341A68BB8F00E4DD89 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -296,6 +302,7 @@
 				266DA0251A68BB8F00E4DD89 /* AppDelegate.m in Sources */,
 				269369CC1A77E231009880A9 /* MurrayNode.m in Sources */,
 				266DA0531A68DA4D00E4DD89 /* ASTableViewViewController.m in Sources */,
+				269369CF1A7803E9009880A9 /* MurrayCell.m in Sources */,
 				266DA0221A68BB8F00E4DD89 /* main.m in Sources */,
 				266DA0501A68DA3B00E4DD89 /* UITableViewViewController.m in Sources */,
 				266DA0471A68D48600E4DD89 /* MainTableViewController.m in Sources */,
@@ -421,9 +428,12 @@
 			baseConfigurationReference = 0DCA701AE939F6E94FBBD30B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ASDK Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -432,9 +442,12 @@
 			baseConfigurationReference = 51D875BCC991143140D3214B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ASDK Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
